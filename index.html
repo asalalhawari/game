@@ -22,7 +22,7 @@
     }
 
     @keyframes glow {
-      0% {
+      0% { 
         text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
       }
       100% {
@@ -131,7 +131,25 @@
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
       border: 1px solid #00ffff;
     }
+    @media (max-width: 768px) {
+  .game-wrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  
+  .game-info {
+    width: 100%;
+    max-width: 240px;
+  }
+  
+  .game-title h1 {
+    font-size: 2rem;
+  }
 
+  .touch-controls {
+    display: grid;
+  }
+}
     h2, h3 {
       margin-bottom: 10px;
       color: #00ffff;
